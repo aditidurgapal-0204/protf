@@ -1,0 +1,119 @@
+Project Title: Aditi Durgapal's Responsive Portfolio Website
+
+Goal: Create a modern, responsive, and interactive personal portfolio website for Aditi Durgapal, a 3rd-year B.Tech CSE student. The website should showcase her skills, provide links to her social media, and include a contact form.
+
+Technology Stack:
+
+Frontend Framework: React
+
+Language: TypeScript
+
+Styling: Tailwind CSS (for responsive design and utility-first styling)
+
+Core Requirements:
+
+Project Setup:
+
+Initialize a new React project with TypeScript.
+
+Configure Tailwind CSS for styling.
+
+Layout & Responsiveness:
+
+Implement a fully responsive design that adapts seamlessly to various screen sizes (mobile, tablet, desktop).
+
+Use Tailwind CSS utility classes extensively for responsive layouts (e.g., sm:, md:, lg: prefixes).
+
+Ensure a clean, modern, and professional aesthetic.
+
+Sections:
+
+Navbar/Header:
+
+A sticky navigation bar at the top.
+
+Links to different sections of the page (e.g., "About", "Skills", "Socials", "Contact").
+
+Include a prominent Dark Mode Toggle button (e.g., a sun/moon icon).
+
+Hero/About Me Section:
+
+A prominent introductory section.
+
+Display "Hi, I'm Aditi Durgapal."
+
+Mention "A 3rd-year B.Tech CSE student."
+
+A brief, engaging tagline or introductory paragraph about her passion for technology.
+
+Skills Section:
+
+Clearly list her key skills: "Java", "Python", "AI".
+
+Present them visually (e.g., as cards, icons, or a skill bar).
+
+Social Media Section:
+
+Provide placeholder links for social media profiles.
+
+Include at least three common social media platforms (e.g., LinkedIn, GitHub, Twitter/X).
+
+Use appropriate icons for each social media link.
+
+Example placeholder links:
+
+LinkedIn: https://www.linkedin.com/in/aditi-durgapal
+
+GitHub: https://github.com/aditidurgapal
+
+Twitter/X: https://twitter.com/aditidurgapal
+
+Contact Me Section:
+
+A simple contact form with the following fields:
+
+Name (text input)
+
+Email (email input)
+
+Subject (text input)
+
+Message (textarea)
+
+A submit button.
+
+Note: The form does not need backend functionality; it should just be a frontend UI.
+
+Footer:
+
+A simple footer with a copyright notice (e.g., "© 2024 Aditi Durgapal. All rights reserved.").
+
+Features:
+
+Dark Mode Toggle:
+
+Implement a functional dark mode toggle.
+
+When toggled, the entire website's color scheme should switch between a light theme and a dark theme.
+
+Persist the user's dark mode preference using localStorage.
+
+Code Structure & Best Practices:
+
+Organize components logically (e.g., components folder for reusable UI elements, pages or sections for main page parts).
+
+Use functional components and React Hooks (e.g., useState, useEffect, useContext).
+
+Ensure clean, well-commented, and readable TypeScript code.
+
+Prioritize accessibility (e.g., semantic HTML, proper ARIA attributes where necessary).
+
+Avoid any external API calls for content beyond what's explicitly requested (like social media links).
+
+Deliverables:
+
+A complete, runnable React + TypeScript project with Tailwind CSS.
+
+All required sections and features implemented as described.
+
+The code should be self-contained and ready to be run in a Replit environment.
