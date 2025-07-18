@@ -112,3 +112,28 @@ Preferred communication style: Simple, everyday language.
 - Static file serving capabilities
 
 The application is designed to be deployed on platforms like Replit, Vercel, or similar Node.js hosting services with PostgreSQL database support.
+
+## Vercel Deployment Configuration
+
+The project is now fully configured for Vercel deployment with:
+
+### Configuration Files
+- `vercel.json`: Defines build settings, routes, and serverless function configuration
+- `api/index.ts`: Serverless API endpoint that imports the main Express server
+- `.vercelignore`: Excludes unnecessary files from deployment
+- `public/_redirects`: Handles client-side routing for SPA behavior
+
+### Build Process for Vercel
+1. **Frontend Build**: Vite builds the React application to `dist/public`
+2. **Backend Build**: Express server is bundled for serverless functions
+3. **Routing**: API routes are handled by serverless functions, static files served directly
+4. **Environment Detection**: Server automatically detects Vercel environment and exports appropriately
+
+### Deployment Steps
+1. Connect GitHub repository to Vercel
+2. Vercel automatically detects the configuration
+3. Build command: `npm run build`
+4. Output directory: `dist/public`
+5. Serverless functions handle API routes via `api/index.ts`
+
+The application now supports both development (local server) and production (Vercel serverless) environments seamlessly.
