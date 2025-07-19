@@ -6,21 +6,21 @@ export default function Social() {
       name: "LinkedIn",
       description: "Professional Network",
       icon: <Linkedin className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
-      url: "https://www.linkedin.com/in/aditi-durgapal",
+      url: "https://www.linkedin.com/in/aditi-durgapal-02428826a",
       bgColor: "bg-blue-100 dark:bg-blue-900"
     },
     {
       name: "GitHub",
       description: "Code Repository",
       icon: <Github className="h-8 w-8 text-gray-900 dark:text-gray-100" />,
-      url: "https://github.com/aditidurgapal",
+      url: "https://github.com/aditidurgapal-0204/",
       bgColor: "bg-gray-100 dark:bg-gray-700"
     },
     {
       name: "Twitter",
       description: "Tech Updates",
       icon: <Twitter className="h-8 w-8 text-sky-600 dark:text-sky-400" />,
-      url: "https://twitter.com/aditidurgapal",
+      url: "https://x.com/_AditiDurgapal_",
       bgColor: "bg-sky-100 dark:bg-sky-900"
     }
   ];
