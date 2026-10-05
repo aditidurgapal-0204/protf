@@ -39,3 +39,15 @@ To run this portfolio locally on your machine, follow these steps:
    ```bash
    git clone [https://github.com/aditidurgapal-0204/protf.git](https://github.com/aditidurgapal-0204/protf.git)
    cd protf
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
+(or npm start depending on your project setup)
+
+Open in Browser:
+Navigate to http://localhost:3000 (or the port specified in your terminal output).
