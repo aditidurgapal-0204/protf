@@ -42,11 +42,10 @@ To run this portfolio locally on your machine, follow these steps:
 2. **Install dependencies:**
     ```bash
    npm install
-   Run the development server:
-
-Bash
-npm run dev
-(or npm start depending on your project setup)
-
-Open in Browser:
-Navigate to http://localhost:3000 (or the port specified in your terminal output).
+3. **Run the development server:**
+    ```bash
+   npm run dev
+   (or npm start depending on your project setup)
+4. **Open in Browser:**
+    ```bash
+   Navigate to http://localhost:3000 (or the port specified in your terminal output).
