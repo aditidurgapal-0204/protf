@@ -39,11 +39,10 @@ To run this portfolio locally on your machine, follow these steps:
    ```bash
    git clone [https://github.com/aditidurgapal-0204/protf.git](https://github.com/aditidurgapal-0204/protf.git)
    cd protf
-Install dependencies:
-
-Bash
-npm install
-Run the development server:
+2. **Install dependencies:**
+    ```bash
+   npm install
+   Run the development server:
 
 Bash
 npm run dev
