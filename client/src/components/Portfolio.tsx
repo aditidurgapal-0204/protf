@@ -1,15 +1,20 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import About from "./About";
+import Experience from "./Experience";
+import Projects from "./Projects";
 import Skills from "./Skills";
-import Social from "./Social";
+import Certifications from "./Certifications";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import ResumeModal from "./ResumeModal";
 
 export default function Portfolio() {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   useEffect(() => {
-    // Scroll animation functionality
+    // Scroll animation observer
     const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
     
     const observer = new IntersectionObserver((entries) => {
@@ -32,13 +37,24 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300 selection:bg-blue-500 selection:text-white">
+      {/* Resume Preview Modal */}
+      <ResumeModal 
+        isOpen={isResumeOpen} 
+        onClose={() => setIsResumeOpen(false)} 
+      />
+
+      {/* Main Page Layout */}
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Social />
-      <Contact />
+      <main>
+        <Hero onOpenResume={() => setIsResumeOpen(true)} />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Certifications />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
